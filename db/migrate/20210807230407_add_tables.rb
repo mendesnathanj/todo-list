@@ -1,4 +1,8 @@
+# frozen_string_literal: true
+
 class AddTables < ActiveRecord::Migration[5.2]
+  # rubocop:disable Metrics/AbcSize
+  # rubocop:disable Metrics/MethodLength
   def change
     create_table :users do |t|
       t.string :first_name
@@ -29,4 +33,6 @@ class AddTables < ActiveRecord::Migration[5.2]
       t.timestamps
     end
   end
+  # rubocop:enable Metrics/AbcSize
+  # rubocop:enable Metrics/MethodLength
 end
