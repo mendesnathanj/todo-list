@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 FactoryBot.define do
-  factory :lists_user do
+  factory :permission do
     association :list
     association :user
 
