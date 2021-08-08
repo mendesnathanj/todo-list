@@ -9,8 +9,7 @@ FactoryBot.define do
     write_access { true }
     delete_access { true }
 
-    trait :shared_lists_user do
-      write_access { false }
+    trait :shared_permission do
       delete_access { false }
     end
   end
