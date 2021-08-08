@@ -18,6 +18,7 @@ RSpec.describe User, type: :model do
 
     context 'when the user has no last name' do
       let(:last_name) { nil }
+
       it 'is invalid' do
         expect { user }.to raise_error(ActiveRecord::RecordInvalid, /Last name can't be blank/)
       end

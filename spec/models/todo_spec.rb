@@ -11,6 +11,7 @@ RSpec.describe Todo, type: :model do
 
     context 'when the todo has no description' do
       let(:description) { nil }
+
       it 'is not valid' do
         expect { todo }.to raise_error(ActiveRecord::RecordInvalid, /Description can't be blank/)
       end

@@ -2,8 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe 'ListUsers', type: :request do
+RSpec.describe 'Todos', type: :request do
   describe 'GET /index' do
-
   end
 end
